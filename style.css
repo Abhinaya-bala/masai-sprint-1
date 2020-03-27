@@ -4,16 +4,18 @@ body {
 
 header {
     text-align: center;
-    margin: 100px;
 }
 
 header h1 {
     font-size: 42px;
+    padding: 10px;
+    margin: auto;
 }
 
 header p {
     font-size: 20px;
     color: grey;
+    font-weight: bolder;
 }
 
 .articles {
@@ -21,20 +23,27 @@ header p {
     margin: auto;
     width: 900px;
     grid-gap: 18px;
+    
 }
 
-.articles h2 {
-    color: white;
-    padding-left: 30px;
-    font-size: 24px;
+.articles button {
+    color:brown;
+    background-color: blanchedalmond;
+    text-align: center;
+    margin: 8px;
+    border-radius:10px;
+    font-size: x-large;
+    font-weight: bolder;
+    
 }
+
 
 .primary-article {
     grid-area: 1/1/2/4;
     height: 300px;
-    background-image: url('https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1931&q=80');
+    background-image: url('https://addons-media.operacdn.com/media/CACHE/images/themes/05/93305/1.0-rev1/images/04cec97f-9120-487a-b7e1-d04f03d171ce/ec39407f31c7372db76db5765ddfdc20.jpg');
+    background-size: cover;
     border-radius: 14px;
-    background-size: 100%;
 }
 
 .secondary-article {
@@ -45,18 +54,24 @@ header p {
 
 .secondary-article:nth-child(2) {
     grid-area: 2/3/3/4;
-    background-repeat: no-repeat;
     background-image: url('https://www.businessinsider.in/thumb.cms?msid=73235070&width=1200&height=900');
+    background-size: cover;
 }
 
 .secondary-article:nth-child(3) {
     grid-area: 2/1/3/2;
-    background-image: url('https://images.unsplash.com/photo-1572476359541-2a41ec8405e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');
+    
+    background-image: url('https://images.unsplash.com/photo-1577375774296-1480089cb555?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');
+
+    background-size: cover;
+    
 }
 
 .secondary-article:nth-child(4) {
     grid-area: 2/2/3/3;
-    background-image: url('https://images.unsplash.com/photo-1577375774296-1480089cb555?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');
+    background-image: url('https://s24255.pcdn.co/wp-content/uploads/2014/09/linux.png');
+    background-size: cover;
+    
 }
 
 .secondar-article:nth-child(5) {
@@ -71,20 +86,37 @@ header p {
     border-radius: 6px;
     padding: 16px;
 }
+#article-content p{
+font-weight: bolder;
+}
 
+#article-content img{
+    height: 400px;
+    }
+
+.logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color:gray;
+}
 .fimage {
     text-align: center;
+    
 }
 
-.fimage img {
-    width: 500px;
-}
+
 
 .article-body {
     background-color: #eee;
 }
 
 .article-title {
+    text-align: center;
+    color:green ;
+}
+.linus-logo{
+    border-radius: 50%;
     text-align: center;
 }
 
@@ -105,12 +137,13 @@ header p {
 }
 
 #distribution {
-    background-color: green;
-    height: 150px;
+    height: 200px;
     width: 80%;
     text-align: center;
     color: black;
     margin-left: 50px;
+    border-radius: 20%;
+    padding: 10px;
 }
 
 #container3 {
@@ -122,32 +155,66 @@ header p {
     margin-left: 20px;
 }
 
+#container3 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
 .LINUXMINT {
-    background-color: black;
-    height: 300px;
+    height: 400px;
     grid-area: 1/1/2/2;
+    padding: 10px;
+    text-align: center;
 }
 
 .UBUNTU {
-    background-color: black;
-    height: 300px;
+    height: 400px;
     grid-area: 1/2/2/3;
+    text-align: center;
+    padding: 10px;
 }
 
 .FEDORA {
-    background-color: black;
-    height: 300px;
+    height: 400px;
     grid-area: 2/1/3/2;
+    padding: 10px;
+    text-align: center;
 }
 
 .REDHAT {
-    background-color: black;
-    height: 300px;
+    height: 500px;
     grid-area: 2/2/3/3;
+    padding: 10px;
+    text-align: center;
 }
 
 .distribution-body {
-    color: white;
+    color: blue;
+    font-weight: bolder;
+    text-align: center;
+    margin: auto;
+}
+.distribution-body h1{
+    color: brown;
+}
+
+.distribution-body img {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 20px;
+    
+}
+
+.distribution-body button
+ {
+    color:brown;
+    background-color: blanchedalmond;
+    text-align: center;
+    margin: 8px;
+    border-radius:10px;
+    font-size: x-large;
+    font-weight: bolder;
 }
 
 @media only screen and (max-width: 962px) {
@@ -173,21 +240,17 @@ header p {
         width: 300px;
     }
     .LINUXMINT {
-        height: 250px;
         grid-area: 1/1/2/2;
     }
     .UBUNTU {
-        height: 250px;
         grid-area: 2/1/3/2;
     }
     .FEDORA {
         display: block;
-        height: 250px;
         grid-area: 1/2/3/3;
     }
     .REDHAT {
         display: block;
-        height: 250px;
         grid-area: 2/2/3/3;
     }
 }
