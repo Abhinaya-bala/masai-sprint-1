@@ -1,0 +1,78 @@
+h1 {
+    text-align: center;
+}
+
+#main-container {
+    /* border: 1px black solid; */
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+button {
+    background-color: black;
+    height: 60px;
+    width: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 10px;
+}
+
+.symbol {
+    text-align: right;
+    font-size: 22px;
+}
+
+.number {
+    text-align: left;
+    font-size: 22px;
+}
+
+.symbol1 {
+    text-align: right;
+    font-size: 22px;
+    visibility: hidden;
+}
+
+#input {
+    height: 60px;
+    width: 900px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 10px;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+.space-bar {
+    width: 500px;
+    margin-left: 230px;
+}
+
+.special-keys>button {
+    background-color: white;
+    color: black;
+    width: 110px;
+    height: 40px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.letter-row1 {
+    margin-left: 50px;
+}
+
+.letter-row2 {
+    margin-left: 100px;
+}
+
+.letter-row3 {
+    margin-left: 150px;
+}
+
+.special-keys {
+    margin-left: 150px;
+}

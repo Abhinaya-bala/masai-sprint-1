@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>keyboard</title>
+</head>
+
+<body>
+    <h1>Key Board</h1>
+    <div id="main-container">
+        <div>
+            <input type="text" id="input" placeholder="masaischool.com">
+        </div>
+        <div class="number-row">
+            <button onclick="keyClick('1','!',true)">
+                <div class="symbol">! </div>
+                <div class="number"> 1 </div>
+            </button>
+            <button onclick="keyClick('2','@',true)">
+                <div class="symbol">@ </div>
+                <div class="number"> 2 </div>
+            </button>
+            <button onclick="keyClick('3','#',true)">
+                <div class="symbol"># </div>
+                <div class="number"> 3 </div>
+            </button>
+            <button onclick="keyClick('4','$',true)">
+                <div class="symbol">$ </div>
+                <div class="number"> 4 </div>
+            </button>
+            <button onclick="keyClick('5','%',true)">
+                <div class="symbol">% </div>
+                <div class="number"> 5</div>
+            </button>
+            <button onclick="keyClick('6','^',true)">
+                <div class="symbol">^ </div>
+                <div class="number"> 6</div>
+            </button>
+            <button onclick="keyClick('7','&',true)">
+                <div class="symbol">&</div>
+                <div class="number"> 7 </div>
+            </button>
+            <button onclick="keyClick('8','*',true)">
+                <div class="symbol">* </div>
+                <div class="number"> 8 </div>
+            </button>
+            <button onclick="keyClick('9','(',true)">
+                <div class="symbol">( </div>
+                <div class="number"> 9 </div>
+            </button>
+            <button onclick="keyClick('0',')',true)">
+                <div class="symbol">)</div>
+                <div class="number"> 0 </div>
+            </button>
+            <button onclick="keyClick('DEL','DEL')">
+                <div class="symbol1"> d</div>
+                <div class="number"> DEL </div>
+            </button>
+
+        </div>
+        <div class="letter-row1">
+            <button onclick="keyClick('q','Q')">Q</button>
+            <button onclick="keyClick('w','W')">W</button>
+            <button onclick="keyClick('e','E')">E</button>
+            <button onclick="keyClick('r','R')">R</button>
+            <button onclick="keyClick('t','T')">T</button>
+            <button onclick="keyClick('y','Y')">Y</button>
+            <button onclick="keyClick('u','U')">U</button>
+            <button onclick="keyClick('i','I')">I</button>
+            <button onclick="keyClick('o','O')">O</button>
+            <button onclick="keyClick('p','P')">P</button>
+
+        </div>
+        <div class="letter-row2">
+            <button onclick="keyClick('a','A')">A</button>
+            <button onclick="keyClick('s','S')">S</button>
+            <button onclick="keyClick('d','D')">D</button>
+            <button onclick="keyClick('f','F')">F</button>
+            <button onclick="keyClick('g','G')">G</button>
+            <button onclick="keyClick('h','H')">H</button>
+            <button onclick="keyClick('j','J')">J</button>
+            <button onclick="keyClick('k','K')">K</button>
+            <button onclick="keyClick('l','L')">L</button>
+        </div>
+        <div class="letter-row3">
+            <button onclick="keyClick('z','Z')">Z</button>
+            <button onclick="keyClick('x','X')">X</button>
+            <button onclick="keyClick('c','C')">C</button>
+            <button onclick="keyClick('v','V')">V</button>
+            <button onclick="keyClick('b','B')">B</button>
+            <button onclick="keyClick('n','N')">N</button>
+            <button onclick="keyClick('m','M')">M</button>
+            <button onclick="keyClick('.com','.com')">.com</button>
+        </div>
+        <div>
+            <button onclick="keyClick(' ',' ')" class="space-bar">space</button>
+        </div>
+        <div class="special-keys">
+            <button id="caps" onclick="toggleCaps()">CAPS</button>
+            <button id="shift" onclick="toggleShift()">SHIFT</button>
+            <button id="passwd" onclick="togglePasswd()">PASSWD</button>
+            <button id="clean" onclick="toggleClean()">CLEAN</button>
+            <button id="reverse" onclick="toggleReverse()">REV</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
